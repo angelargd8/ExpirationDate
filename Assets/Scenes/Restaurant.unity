@@ -368,6 +368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -500,6 +504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -560,6 +568,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -820,6 +832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1022,6 +1038,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2070,6 +2090,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2767,6 +2791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3431,6 +3459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3491,6 +3523,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3821,6 +3857,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4181,6 +4221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4448,6 +4492,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4971,6 +5019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5188,6 +5240,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5386,6 +5442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5456,6 +5516,14 @@ PrefabInstance:
     - target: {fileID: 5839060369782139840, guid: 5ff9f985590cd094795d262c89e14e46, type: 3}
       propertyPath: m_Name
       value: FFK_Table_01_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839060369782139840, guid: 5ff9f985590cd094795d262c89e14e46, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203607979894560046, guid: 5ff9f985590cd094795d262c89e14e46, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8618,6 +8686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10264,6 +10336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11399,6 +11475,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11956,6 +12036,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15955,6 +16039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16976,6 +17064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17172,6 +17264,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17506,6 +17602,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18787,6 +18887,38 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a7ee6b8409d984478bcc1746266691b, type: 3}
+--- !u!1 &946320463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 946320464}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &946320464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946320463}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.06143, y: 1.4894, z: 9.7983}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2024207179}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &948578047 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6166584487648029287, guid: cc2c18e189d423749bcb27809650683d, type: 3}
@@ -19811,6 +19943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19871,6 +20007,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20347,6 +20487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20534,6 +20678,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20784,6 +20932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20799,6 +20951,159 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8522075622236389654, guid: dd6658866c1c65a4aa4a6c6e8e34e4f5, type: 3}
   m_PrefabInstance: {fileID: 1375338395}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1040005426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1040005430}
+  - component: {fileID: 1040005429}
+  - component: {fileID: 1040005428}
+  - component: {fileID: 1040005427}
+  - component: {fileID: 1040005431}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1040005427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040005426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
+--- !u!81 &1040005428
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040005426}
+  m_Enabled: 1
+--- !u!20 &1040005429
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040005426}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1040005430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040005426}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.3992531, y: 0.00014982215, z: -0.00034405, w: 0.91684073}
+  m_LocalPosition: {x: -9.1, y: 2.3791437, z: 9.121}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 47.063, y: 0, z: -0.043}
+--- !u!114 &1040005431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040005426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0945d4baab720c1488d073e2ce9ae6cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  target: {fileID: 2024207179}
+  offset: {x: 0, y: 1, z: -1}
+  smoothSpeed: 8
 --- !u!4 &1041776141 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4307640417859606744, guid: 4bb2a81fa1ac56b4a9a5c0aee917bd48, type: 3}
@@ -21271,6 +21576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21625,6 +21934,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22472,6 +22785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22862,6 +23179,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23273,6 +23594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23537,6 +23862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23602,6 +23931,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24671,6 +25004,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25662,6 +25999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25737,6 +26078,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26374,7 +26719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7267244972386396730, guid: 3ce60c1a67d0c1943bb31f0d9720a665, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.519
+      value: -0.581
       objectReference: {fileID: 0}
     - target: {fileID: 8586693614326275244, guid: 3ce60c1a67d0c1943bb31f0d9720a665, type: 3}
       propertyPath: m_Name
@@ -27011,6 +27356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27142,6 +27491,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27949,6 +28302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28019,6 +28376,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28228,6 +28589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28354,6 +28719,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28730,6 +29099,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29964,6 +30337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30352,6 +30729,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30937,6 +31318,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30997,6 +31382,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31403,6 +31792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31473,6 +31866,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32144,6 +32541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32371,6 +32772,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32825,6 +33230,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33867,6 +34276,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35363,6 +35776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35434,6 +35851,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35494,6 +35915,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35688,6 +36113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35819,6 +36248,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36794,6 +37227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36869,6 +37306,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37550,6 +37991,63 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1001 &1842607681
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 946320464}
+    m_Modifications:
+    - target: {fileID: 7376012563638975676, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: m_Name
+      value: Burger
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860765918055671302, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.057089806
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860765918055671302, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.16710007
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860765918055671302, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03891468
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860765918055671302, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860765918055671302, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860765918055671302, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860765918055671302, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860765918055671302, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860765918055671302, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860765918055671302, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
 --- !u!1001 &1843738226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38750,6 +39248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38815,6 +39317,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38887,6 +39393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38953,6 +39463,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39018,6 +39532,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39597,6 +40115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39662,6 +40184,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39733,6 +40259,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40846,6 +41376,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41393,6 +41927,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3469878753922927357, guid: 8241ffa2db322f148a140189e8ca4afd, type: 3}
   m_PrefabInstance: {fileID: 458870170}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2024207179 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7860765918055671302, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+  m_PrefabInstance: {fileID: 1842607681}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2026743359
 GameObject:
   m_ObjectHideFlags: 0
@@ -41680,6 +42219,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43463,6 +44006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43604,6 +44151,10 @@ PrefabInstance:
     - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
       propertyPath: m_Name
       value: Int_FFK_01_Floor_01 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2467845069284968302, guid: 3c0b460c20e5c954d8523df4157882d1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44024,3 +44575,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 893066315}
   - {fileID: 228162481}
+  - {fileID: 1040005430}
+  - {fileID: 946320464}
