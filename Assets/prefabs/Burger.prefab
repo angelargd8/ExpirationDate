@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7315601602666133217
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 28505212579449429, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 277781429787920989, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_Name
+      value: Burger
+      objectReference: {fileID: 0}
+    - target: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2626309
+      objectReference: {fileID: 0}
+    - target: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3657484
+      objectReference: {fileID: 0}
+    - target: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.813774
+      objectReference: {fileID: 0}
+    - target: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3632430969945963930, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.615293
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141600572111419625, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.20131549
+      objectReference: {fileID: 0}
+    - target: {fileID: 4371257710955696001, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 5054103988885511043, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.615293
+      objectReference: {fileID: 0}
+    - target: {fileID: 5608142646110195253, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6004802
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115147995094757726, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.783
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 5077537929852257833, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+    - {fileID: 7469788763735265410, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+    - {fileID: 6592419431265602806, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
