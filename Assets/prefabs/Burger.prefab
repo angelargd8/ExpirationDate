@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3221471250610986062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2811429810042740928}
+  m_Layer: 0
+  m_Name: camera target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2811429810042740928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3221471250610986062}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.8615393, y: 0.77, z: 0.20473915}
+  m_LocalScale: {x: 8.155469, y: 8.155477, z: 8.155469}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7860765918055671302}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7347832327849683763
 GameObject:
   m_ObjectHideFlags: 0
@@ -46,6 +77,10 @@ PrefabInstance:
     - target: {fileID: 277781429787920989, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
       propertyPath: m_Name
       value: Burger
+      objectReference: {fileID: 0}
+    - target: {fileID: 277781429787920989, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -120,6 +155,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5163275886220782860}
+    - targetCorrespondingSourceObject: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2811429810042740928}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 277781429787920989, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
       insertIndex: -1
@@ -206,6 +244,13 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  cameraTransform: {fileID: 0}
+  cameraTarget: {fileID: 2811429810042740928}
+  cameraDistance: 1
+  cameraHeight: 0.4
+  mouseSensitivity: 100
+  minPitch: -30
+  maxPitch: 65
 --- !u!114 &9198072592998759570
 MonoBehaviour:
   m_ObjectHideFlags: 0
