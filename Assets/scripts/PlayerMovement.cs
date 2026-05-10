@@ -5,13 +5,14 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
     [SerializeField] private float speed = 2f;
+    [SerializeField] private float sprintSpeed = 4f;
 
     [Header("Jump")]
     [SerializeField] private float jumpForce = 6f;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius = 0.25f;
     [SerializeField] private LayerMask groundLayer;
-    
+
     [Header("Camera")]
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private Transform cameraTarget;
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 lookInput;
 
     private bool isGrounded;
+    private bool isSprinting;
 
     private float yaw;
     private float pitch = 20f;
@@ -74,7 +76,9 @@ public class PlayerMovement : MonoBehaviour
             direction.Normalize();
         }
 
-        Vector3 movement = direction * speed * Time.fixedDeltaTime;
+        float currentSpeed = isSprinting ? sprintSpeed : speed;
+
+        Vector3 movement = direction * currentSpeed * Time.fixedDeltaTime;
         rb.MovePosition(rb.position + movement);
 
         if (direction.sqrMagnitude > 0.01f)
@@ -132,5 +136,10 @@ public class PlayerMovement : MonoBehaviour
         if (!isGrounded) return;
 
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+    }
+
+    public void OnSprint(InputValue value)
+    {
+        isSprinting = value.isPressed;
     }
 }
