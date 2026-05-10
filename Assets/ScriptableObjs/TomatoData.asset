@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7aaf449eea7234799a75c7f4684e5b, type: 3}
   m_Name: TomatoData
   m_EditorClassIdentifier: Assembly-CSharp::IngridientData
-  ingredientName: 
-  projectilePrefab: {fileID: 0}
-  throwForce: 15
+  ingredientName: Tomato
+  projectilePrefab: {fileID: 1914639951603697790, guid: 6405cfbd3e015be42a7cb25282258ae4, type: 3}
+  throwForce: 5
   damage: 1
   lifeTime: 5
