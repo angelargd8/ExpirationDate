@@ -45,11 +45,11 @@ public class GameManager : MonoBehaviour
     private IEnumerator LoadSceneAsync(string sceneName)
     {
         isLoading = true;
-        
-        //if (AudioManager.Instance != null)
-        //{
-        //    AudioManager.Instance.PlayLoadingMusic();
-        //}
+
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayLoadingMusic();
+        }
 
         if (!SceneManager.GetSceneByName(loadingSceneName).isLoaded)
         {
@@ -84,10 +84,10 @@ public class GameManager : MonoBehaviour
             yield return SceneManager.UnloadSceneAsync(loadingSceneName);
         }
 
-        //if (AudioManager.Instance != null)
-        //{
-        //    AudioManager.Instance.PlayMusicForScene(sceneName);
-        //}
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayMusicForScene(sceneName);
+        }
 
 
 
