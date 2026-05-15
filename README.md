@@ -2,7 +2,11 @@
 
 ### Enlace del video:
 
-[Video](https://youtu.be/kZIbPFBSW6U)
+[Video click aquí](https://youtu.be/kZIbPFBSW6U)
+
+### Demo:
+
+[Demo click aquí](https://angelargd8.itch.io/expirationdate?secret=dYigCBnygTMSvVDLNdYzm2B8)
 
 ### Niveles jugables:
 - Restaurant
