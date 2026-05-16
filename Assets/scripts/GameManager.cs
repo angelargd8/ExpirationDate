@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private string loadingSceneName = "LoadingScene";
 
 
-    [Header("Loaging")]
+    [Header("Loading")]
     [SerializeField] private float loadingMinTime = 3.0f;
 
 
