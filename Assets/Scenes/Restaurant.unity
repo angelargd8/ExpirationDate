@@ -39185,7 +39185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1043451336317407097, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: freshnessLossAmount
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1043451336317407097, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: freshnessLossInterval
