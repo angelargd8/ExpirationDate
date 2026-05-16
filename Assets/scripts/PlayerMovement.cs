@@ -84,6 +84,7 @@ public class PlayerMovement : MonoBehaviour
         if (direction.sqrMagnitude > 0.01f)
         {
             Quaternion targetRotation = Quaternion.LookRotation(direction);
+
             transform.rotation = Quaternion.Slerp(
                 transform.rotation,
                 targetRotation,
@@ -140,6 +141,13 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnSprint(InputValue value)
     {
-        isSprinting = value.isPressed;
+        isSprinting = value.Get<float>() > 0.5f;
+    }
+
+    private void OnDisable()
+    {
+        moveInput = Vector2.zero;
+        lookInput = Vector2.zero;
+        isSprinting = false;
     }
 }
