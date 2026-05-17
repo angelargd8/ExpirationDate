@@ -49,7 +49,7 @@ public class IngredientThrower : MonoBehaviour
 
     public void ThrowIngredientTowards(Vector3 targetPosition)
     {
-        Debug.Log("Enemigo lanzando ingrediente hacia el jugador");
+        Debug.Log("Enemy throwing ingredient to player");
 
         if (!CanThrow()) return;
 

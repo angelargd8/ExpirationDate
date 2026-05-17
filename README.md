@@ -5,11 +5,11 @@
 [Video click aquí](https://youtu.be/Ada4mq2WccE)
 
 
-### Enlace del video primer DEMO (game design):
+### Enlace del video del DEMO (game design):
 
-[Video click aquí](https://youtu.be/kZIbPFBSW6U)
+[Video click aquí](https://youtu.be/GxzGxB9vq6M)
 
-### Demo:
+### DEMO en Itch.io:
 
 [Demo click aquí](https://angelargd8.itch.io/expirationdate?secret=dYigCBnygTMSvVDLNdYzm2B8)
 
