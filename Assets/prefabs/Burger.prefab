@@ -93,83 +93,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7860765918055671302}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2066720524696081309
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 7860765918055671302}
-    m_Modifications:
-    - target: {fileID: 980919179778540656, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
-      propertyPath: currentLife
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2092866768851478031, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.036883
-      objectReference: {fileID: 0}
-    - target: {fileID: 2092866768851478031, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -9.968438
-      objectReference: {fileID: 0}
-    - target: {fileID: 2092866768851478031, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 28.023373
-      objectReference: {fileID: 0}
-    - target: {fileID: 2092866768851478031, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2092866768851478031, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2092866768851478031, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2092866768851478031, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2092866768851478031, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2092866768851478031, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2092866768851478031, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5936394096526724553, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
-      propertyPath: m_Name
-      value: BurgerStats
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
---- !u!4 &118549768289416594 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2092866768851478031, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
-  m_PrefabInstance: {fileID: 2066720524696081309}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1239223898924750829 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 980919179778540656, guid: fcd3ce26c5e23d04ca70f17282ab87f1, type: 3}
-  m_PrefabInstance: {fileID: 2066720524696081309}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
 --- !u!1001 &6939648227118368840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -194,10 +117,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5201956399961376495, guid: e374b9cc1eea9cf4383445cae34f6575, type: 3}
-      propertyPath: targetStats
-      value: 
-      objectReference: {fileID: 1239223898924750829}
     - target: {fileID: 6288491749975152825, guid: e374b9cc1eea9cf4383445cae34f6575, type: 3}
       propertyPath: m_Name
       value: StatusBarCanvas
@@ -370,9 +289,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 388055247172350883}
-    - targetCorrespondingSourceObject: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 118549768289416594}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 277781429787920989, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
       insertIndex: -1
@@ -520,6 +436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::IngredientThrower
   currentIngredient: {fileID: 11400000, guid: c1ffaab8a8934754ab9c1497f76c04a6, type: 2}
   throwPoint: {fileID: 6492883844561681084}
+  throwForceMultiplier: 1
 --- !u!114 &8998861600645619711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,7 +453,7 @@ MonoBehaviour:
   pickupLayer:
     serializedVersion: 2
     m_Bits: 128
-  burgerStats: {fileID: 1239223898924750829}
+  burgerStats: {fileID: 0}
 --- !u!114 &5994496192759286065
 MonoBehaviour:
   m_ObjectHideFlags: 0
