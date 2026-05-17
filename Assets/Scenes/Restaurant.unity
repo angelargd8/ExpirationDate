@@ -9287,6 +9287,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1806817081468600692, guid: 46ff4ab664fcb354db17f4c1f46ef600, type: 3}
   m_PrefabInstance: {fileID: 2145624734}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &495233055 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1738016317085470649, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+  m_PrefabInstance: {fileID: 1842607681}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!4 &496941649 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5838439550256664009, guid: 75c16d4794f25e84ea8d82ee45dd1937, type: 3}
@@ -34130,17 +34141,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6303645, y: 0.38650995, z: 0.62078786}
   m_Center: {x: -1.8028854e-22, y: 0.8513886, z: 0.00000013411045}
---- !u!114 &1632556130 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1043451336317407097, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
-  m_PrefabInstance: {fileID: 1842607681}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
 --- !u!1001 &1635319561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39191,6 +39191,22 @@ PrefabInstance:
       propertyPath: freshnessLossInterval
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1239223898924750829, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: currentLife
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239223898924750829, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: currentFreshness
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239223898924750829, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: freshnessLossAmount
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239223898924750829, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: freshnessLossInterval
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1770764908936046593, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: cameraTransform
       value: 
@@ -39215,6 +39231,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2918220973931744935, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: lifeBarFill
+      value: 
+      objectReference: {fileID: 495233055}
     - target: {fileID: 2920334238840140896, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: m_Type
       value: 3
@@ -39250,7 +39270,7 @@ PrefabInstance:
     - target: {fileID: 3892007625291471804, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: targetStats
       value: 
-      objectReference: {fileID: 1632556130}
+      objectReference: {fileID: 0}
     - target: {fileID: 4079639739460100349, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: m_SizeDelta.y
       value: 12
