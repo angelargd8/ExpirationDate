@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
   maxLife: 100
-  currentLife: 0
+  currentLife: 90
   maxFreshness: 100
-  currentFreshness: 0
+  currentFreshness: 10
   reduceFreshnessOverTime: 1
   freshnessLossInterval: 1
   freshnessLossAmount: 1

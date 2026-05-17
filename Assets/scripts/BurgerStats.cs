@@ -48,11 +48,7 @@ public class BurgerStats : MonoBehaviour
         return (float)currentFreshness / maxFreshness;
     }
 
-    public void TakeDamage(int amount)
-    {
-        currentLife -= amount;
-        currentLife = Mathf.Clamp(currentLife, 0, maxLife);
-    }
+
 
     public void Heal(int amount)
     {
@@ -71,6 +67,28 @@ public class BurgerStats : MonoBehaviour
         currentFreshness += amount;
         currentFreshness = Mathf.Clamp(currentFreshness, 0, maxFreshness);
     }
+
+    public void TakeDamage(int amount)
+    {
+        currentLife -= amount;
+        currentLife = Mathf.Clamp(currentLife, 0, maxLife);
+
+        Debug.Log(gameObject.name + " recibio daño, vida actual: " + currentLife);
+
+        if (currentLife <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Debug.Log(gameObject.name + " fue derrotado");
+
+      
+        gameObject.SetActive(false);
+    }
+
 
     public void ApplyIngredient(IngredientDataPickUp ingredientData)
     {
