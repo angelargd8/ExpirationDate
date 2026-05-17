@@ -6517,7 +6517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 890736209206508226, guid: 48e441fb20892c342bce3ddaef3a6f3f, type: 3}
       propertyPath: viewRadius
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 890736209206508226, guid: 48e441fb20892c342bce3ddaef3a6f3f, type: 3}
       propertyPath: patrolSpeed
