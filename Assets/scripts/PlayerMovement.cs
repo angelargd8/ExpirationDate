@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float mouseSensitivity = 100f;
     [SerializeField] private float minPitch = -30f;
     [SerializeField] private float maxPitch = 65f;
-
+    
     private Rigidbody rb;
     private PlayerInput playerInput;
 

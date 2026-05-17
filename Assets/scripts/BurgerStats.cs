@@ -8,12 +8,12 @@ public class BurgerStats : MonoBehaviour
 
     [Header("Frescura")]
     [SerializeField] private int maxFreshness = 100;
-    [SerializeField] private float currentFreshness = 100f;
+    [SerializeField] private int currentFreshness = 100;
 
     [Header("Frescura automatica")]
     [SerializeField] private bool reduceFreshnessOverTime = false;
     [SerializeField] private float freshnessLossInterval = 1f;
-    [SerializeField] private float freshnessLossAmount = 0.1f;
+    [SerializeField] private int freshnessLossAmount = 1;
 
     private float freshnessTimer;
 
@@ -39,14 +39,12 @@ public class BurgerStats : MonoBehaviour
     public float GetLifePercentage()
     {
         if (maxLife <= 0) return 0f;
-
         return (float)currentLife / maxLife;
     }
 
     public float GetFreshnessPercentage()
     {
         if (maxFreshness <= 0) return 0f;
-
         return (float)currentFreshness / maxFreshness;
     }
 
@@ -62,7 +60,7 @@ public class BurgerStats : MonoBehaviour
         currentLife = Mathf.Clamp(currentLife, 0, maxLife);
     }
 
-    public void ReduceFreshness(float amount)
+    public void ReduceFreshness(int amount)
     {
         currentFreshness -= amount;
         currentFreshness = Mathf.Clamp(currentFreshness, 0, maxFreshness);
@@ -72,6 +70,31 @@ public class BurgerStats : MonoBehaviour
     {
         currentFreshness += amount;
         currentFreshness = Mathf.Clamp(currentFreshness, 0, maxFreshness);
+    }
+
+    public void ApplyIngredient(IngredientDataPickUp ingredientData)
+    {
+        if (ingredientData == null) return;
+
+        if (ingredientData.lifeAmount > 0)
+        {
+            Heal(ingredientData.lifeAmount);
+        }
+        else if (ingredientData.lifeAmount < 0)
+        {
+            TakeDamage(Mathf.Abs(ingredientData.lifeAmount));
+        }
+
+        if (ingredientData.freshnessAmount > 0)
+        {
+            AddFreshness(ingredientData.freshnessAmount);
+        }
+        else if (ingredientData.freshnessAmount < 0)
+        {
+            ReduceFreshness(Mathf.Abs(ingredientData.freshnessAmount));
+        }
+
+        Debug.Log(gameObject.name + " recogio " + ingredientData.ingredientName);
     }
 
     private void OnValidate()

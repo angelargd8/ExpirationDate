@@ -1,7 +1,7 @@
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "New Ingredient", menuName = "Burguer Game/Ingredient")]
+[CreateAssetMenu(fileName = "New Ingredient", menuName = "Burger Game/Ingredient")]
 public class IngredientData: ScriptableObject
 {
     [Header("Basic Info")]
