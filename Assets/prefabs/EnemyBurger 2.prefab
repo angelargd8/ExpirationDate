@@ -955,6 +955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::IngredientThrower
   currentIngredient: {fileID: 11400000, guid: c1ffaab8a8934754ab9c1497f76c04a6, type: 2}
   throwPoint: {fileID: 6492883844561681084}
+  throwForceMultiplier: 2
 --- !u!114 &7501488432846134440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1001,12 +1002,12 @@ MonoBehaviour:
   viewRadius: 5
   viewAngle: 120
   attackCooldown: 1.5
-  jumpForce: 5
+  jumpForce: 6
   groundCheck: {fileID: 5163275886220782860}
   groundCheckRadius: 0.25
   groundLayer:
     serializedVersion: 2
-    m_Bits: 320
+    m_Bits: 64
 --- !u!4 &7860765918055671302 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}

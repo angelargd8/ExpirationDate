@@ -6322,6 +6322,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2024207179}
     - target: {fileID: 7323705380055468886, guid: 8fdfe691e56930e4ca9d8efb3dc3a780, type: 3}
+      propertyPath: viewRadius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7323705380055468886, guid: 8fdfe691e56930e4ca9d8efb3dc3a780, type: 3}
+      propertyPath: attackCooldown
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7323705380055468886, guid: 8fdfe691e56930e4ca9d8efb3dc3a780, type: 3}
       propertyPath: groundLayer.m_Bits
       value: 64
       objectReference: {fileID: 0}
@@ -33217,6 +33225,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2024207179}
     - target: {fileID: 7323705380055468886, guid: 8fdfe691e56930e4ca9d8efb3dc3a780, type: 3}
+      propertyPath: viewRadius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7323705380055468886, guid: 8fdfe691e56930e4ca9d8efb3dc3a780, type: 3}
+      propertyPath: attackCooldown
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7323705380055468886, guid: 8fdfe691e56930e4ca9d8efb3dc3a780, type: 3}
       propertyPath: groundLayer.m_Bits
       value: 64
       objectReference: {fileID: 0}
@@ -41989,6 +42005,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2024207179}
+    - target: {fileID: 7323705380055468886, guid: 8fdfe691e56930e4ca9d8efb3dc3a780, type: 3}
+      propertyPath: attackCooldown
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7323705380055468886, guid: 8fdfe691e56930e4ca9d8efb3dc3a780, type: 3}
       propertyPath: groundLayer.m_Bits
       value: 64

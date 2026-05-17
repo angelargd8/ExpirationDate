@@ -9,6 +9,9 @@ public class IngredientThrower : MonoBehaviour
     [Header("Throw Settings")]
     [SerializeField] private Transform throwPoint;
 
+    [Header("Owner Throw Settings")]
+    [SerializeField] private float throwForceMultiplier = 1f;
+    
     public void OnThrow(InputValue value)
     {
         if (!value.isPressed) return;
@@ -35,7 +38,10 @@ public class IngredientThrower : MonoBehaviour
         if (rb != null)
         {
             rb.linearVelocity = Vector3.zero;
-            rb.AddForce(throwPoint.forward * currentIngredient.throwForce, ForceMode.Impulse);
+
+            float finalThrowForce = currentIngredient.throwForce * throwForceMultiplier;
+
+            rb.AddForce(throwPoint.forward * finalThrowForce, ForceMode.Impulse);
         }
 
         Destroy(projectile, currentIngredient.lifeTime);
@@ -62,10 +68,15 @@ public class IngredientThrower : MonoBehaviour
             rb.linearVelocity = Vector3.zero;
 
             Vector3 direction = targetPosition - throwPoint.position;
+
+            // Altura del arco del lanzamiento 
             direction.y += 1.2f;
+
             direction.Normalize();
 
-            rb.AddForce(direction * currentIngredient.throwForce, ForceMode.Impulse);
+            float finalThrowForce = currentIngredient.throwForce * throwForceMultiplier;
+
+            rb.AddForce(direction * finalThrowForce, ForceMode.Impulse);
         }
 
         Destroy(projectile, currentIngredient.lifeTime);
@@ -76,19 +87,19 @@ public class IngredientThrower : MonoBehaviour
 
         if (currentIngredient == null)
         {
-            Debug.LogWarning("No hay ingrediente asignado.");
+            Debug.LogWarning("No hay ingrediente");
             return false;
         }
 
         if (currentIngredient.projectilePrefab == null)
         {
-            Debug.LogWarning("El ingrediente no tiene prefab asignado.");
+            Debug.LogWarning("El ingrediente no tiene prefab ");
             return false;
         }
 
         if (throwPoint == null)
         {
-            Debug.LogWarning("No hay ThrowPoint asignado.");
+            Debug.LogWarning("No hay ThrowPoint");
             return false;
         }
 
@@ -103,8 +114,6 @@ public class IngredientThrower : MonoBehaviour
         {
             damageScript.SetOwner(gameObject);
         }
-
     }
-
 
 }
