@@ -28,7 +28,7 @@ public class IngredientThrower : MonoBehaviour
             throwPoint.rotation
         );
 
-        SetProjectileOwner(projectile);
+        AssignOwner(projectile);
 
         Rigidbody rb = projectile.GetComponent<Rigidbody>();
 
@@ -41,62 +41,11 @@ public class IngredientThrower : MonoBehaviour
         Destroy(projectile, currentIngredient.lifeTime);
     }
 
-
-    private bool CanThrow()
-    {
-        if (currentIngredient == null)
-        {
-            Debug.LogWarning("No hay ingrediente");
-            return false;
-        }
-
-        if (currentIngredient.projectilePrefab == null)
-        {
-            Debug.LogWarning("El ingrediente no tiene prefab");
-            return false;
-        }
-
-        if (throwPoint == null)
-        {
-            Debug.LogWarning("No hay ThrowPoint");
-            return false;
-        }
-
-        return true;
-    }
-
-    private void SetProjectileOwner(GameObject projectile)
-    {
-        EnemyIngredientDamage damageScript = projectile.GetComponent<EnemyIngredientDamage>();
-
-        if (damageScript != null)
-        {
-            damageScript.SetOwner(gameObject);
-        }
-    }
-
-
     public void ThrowIngredientTowards(Vector3 targetPosition)
     {
         Debug.Log("Enemigo lanzando ingrediente hacia el jugador");
 
-        if (currentIngredient == null)
-        {
-            Debug.LogWarning("No hay ingrediente ");
-            return;
-        }
-
-        if (currentIngredient.projectilePrefab == null)
-        {
-            Debug.LogWarning("El ingrediente no tiene prefab ");
-            return;
-        }
-
-        if (throwPoint == null)
-        {
-            Debug.LogWarning("No hay ThrowPoint ");
-            return;
-        }
+        if (!CanThrow()) return;
 
         GameObject projectile = Instantiate(
             currentIngredient.projectilePrefab,
@@ -104,12 +53,7 @@ public class IngredientThrower : MonoBehaviour
             Quaternion.identity
         );
 
-        EnemyIngredientDamage damageScript = projectile.GetComponent<EnemyIngredientDamage>();
-
-        if (damageScript != null)
-        {
-            damageScript.SetOwner(gameObject);
-        }
+        AssignOwner(projectile);
 
         Rigidbody rb = projectile.GetComponent<Rigidbody>();
 
@@ -126,4 +70,41 @@ public class IngredientThrower : MonoBehaviour
 
         Destroy(projectile, currentIngredient.lifeTime);
     }
+
+    private bool CanThrow()
+    {
+
+        if (currentIngredient == null)
+        {
+            Debug.LogWarning("No hay ingrediente asignado.");
+            return false;
+        }
+
+        if (currentIngredient.projectilePrefab == null)
+        {
+            Debug.LogWarning("El ingrediente no tiene prefab asignado.");
+            return false;
+        }
+
+        if (throwPoint == null)
+        {
+            Debug.LogWarning("No hay ThrowPoint asignado.");
+            return false;
+        }
+
+        return true;
+    }
+
+    private void AssignOwner(GameObject projectile)
+    {
+        IngredientDamage damageScript = projectile.GetComponent<IngredientDamage>();
+
+        if (damageScript != null)
+        {
+            damageScript.SetOwner(gameObject);
+        }
+
+    }
+
+
 }

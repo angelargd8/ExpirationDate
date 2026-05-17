@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8657656027954694423}
   - component: {fileID: 366655120496910443}
   - component: {fileID: 8178630464608569889}
-  - component: {fileID: 1775605272627095355}
+  - component: {fileID: -2209676350905781659}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: Untagged
@@ -142,7 +142,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4540155096325786107, guid: cf2d1b839c067794b9b4aa7b68f3257e, type: 3}
---- !u!114 &1775605272627095355
+--- !u!114 &-2209676350905781659
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,8 +151,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1914639951603697790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42068c12bec35614ea0c995f800a0877, type: 3}
+  m_Script: {fileID: 11500000, guid: cfab921940910dd4d8517cb3ce4a1e81, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyIngredientDamage
+  m_EditorClassIdentifier: Assembly-CSharp::IngredientDamage
   damage: 10
-  lifeTime: 5
+  destroyOnHit: 1

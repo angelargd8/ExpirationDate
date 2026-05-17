@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyIngredientDamage : MonoBehaviour
+public class IngredientDamage : MonoBehaviour
 {
     [Header("Damage")]
     [SerializeField] private int damage = 10;
@@ -14,18 +14,23 @@ public class EnemyIngredientDamage : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject == owner)
+        // no evitar a quien lo produjo
+        if (owner != null && collision.transform.root == owner.transform.root)
         {
             return;
         }
 
-        BurgerStats stats = collision.gameObject.GetComponent<BurgerStats>();
+        BurgerStats stats = collision.gameObject.GetComponentInParent<BurgerStats>();
 
         if (stats != null)
         {
             stats.TakeDamage(damage);
-            Destroy(gameObject);
+
+            Debug.Log(gameObject.name + " hizo " + damage + " de daño a " + stats.gameObject.name);
+
             return;
         }
+
+
     }
 }

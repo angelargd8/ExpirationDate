@@ -4064,6 +4064,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5838439550256664009, guid: 75c16d4794f25e84ea8d82ee45dd1937, type: 3}
   m_PrefabInstance: {fileID: 360790772}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &192436805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7376012563638975676, guid: 48e441fb20892c342bce3ddaef3a6f3f, type: 3}
+  m_PrefabInstance: {fileID: 330638086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &192436813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192436805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
+  maxLife: 100
+  currentLife: 100
+  maxFreshness: 100
+  currentFreshness: 10
+  reduceFreshnessOverTime: 0
+  freshnessLossInterval: 1
+  freshnessLossAmount: 0
 --- !u!1001 &205542297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6604,9 +6628,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5677976608870719060, guid: 48e441fb20892c342bce3ddaef3a6f3f, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7376012563638975676, guid: 48e441fb20892c342bce3ddaef3a6f3f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 192436813}
   m_SourcePrefab: {fileID: 100100000, guid: 48e441fb20892c342bce3ddaef3a6f3f, type: 3}
 --- !u!1001 &334130071
 PrefabInstance:
@@ -25333,6 +25361,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8061035168507510973, guid: b96da0c0b7583164889302d9a1366807, type: 3}
   m_PrefabInstance: {fileID: 163848215}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1153358912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7376012563638975676, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+  m_PrefabInstance: {fileID: 1842607681}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1158957518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41671,7 +41704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1239223898924750829, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: freshnessLossAmount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1239223898924750829, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: freshnessLossInterval
@@ -41922,9 +41955,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5677976608870719060, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7376012563638975676, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2024207188}
   m_SourcePrefab: {fileID: 100100000, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
 --- !u!1001 &1843738226
 PrefabInstance:
@@ -46056,6 +46093,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7860765918055671302, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
   m_PrefabInstance: {fileID: 1842607681}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2024207188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153358912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
+  maxLife: 100
+  currentLife: 100
+  maxFreshness: 100
+  currentFreshness: 50
+  reduceFreshnessOverTime: 1
+  freshnessLossInterval: 10
+  freshnessLossAmount: 1
 --- !u!1 &2026743359
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,5 +15,5 @@ MonoBehaviour:
   ingredientName: Tomato
   projectilePrefab: {fileID: 1914639951603697790, guid: 6405cfbd3e015be42a7cb25282258ae4, type: 3}
   throwForce: 5
-  damage: 1
+  damage: 5
   lifeTime: 5
