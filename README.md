@@ -7,7 +7,7 @@
 
 ### Enlace del video del DEMO (game design):
 
-[Video click aquí](https://youtu.be/GxzGxB9vq6M)
+[Video click aquí](https://youtu.be/KZ4zSgrDsSo?si=VkTHZfp_GzxN52tf)
 
 ### DEMO en Itch.io:
 
