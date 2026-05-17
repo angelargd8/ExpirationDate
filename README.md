@@ -1,11 +1,11 @@
 # ExpirationDate
 
-## Laboratorio 8: Input Actions
+## Laboratorio 8: Input Actions (progra)
 
 [Video click aquí](https://youtu.be/Ada4mq2WccE)
 
 
-### Enlace del video primer DEMO:
+### Enlace del video primer DEMO (game design):
 
 [Video click aquí](https://youtu.be/kZIbPFBSW6U)
 
