@@ -45104,7 +45104,8 @@ PrefabInstance:
       propertyPath: m_NotificationBehavior
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5994496192759286065, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
     m_RemovedGameObjects:
     - {fileID: 5677976608870719060, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
     m_AddedGameObjects: []
