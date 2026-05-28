@@ -13,6 +13,9 @@ public class StatusBars : MonoBehaviour
     [Header("Camara")]
     [SerializeField] private Transform cameraTransform;
 
+    [Header("Billboarding")]
+    [SerializeField] private bool useBillboarding = true;
+
     private void Start()
     {
         if (targetStats == null)
@@ -31,15 +34,16 @@ public class StatusBars : MonoBehaviour
     private void LateUpdate()
     {
         UpdateBars();
-        FaceCamera();
+
+        if (useBillboarding)
+        {
+            FaceCamera();
+        }
     }
 
     private void UpdateBars()
     {
-        if (targetStats == null)
-        {
-            return;
-        }
+        if (targetStats == null) return;
 
         if (lifeBarFill != null)
         {
@@ -56,6 +60,6 @@ public class StatusBars : MonoBehaviour
     {
         if (cameraTransform == null) return;
 
-        transform.LookAt(transform.position + cameraTransform.forward);
+        transform.rotation = cameraTransform.rotation;
     }
 }
