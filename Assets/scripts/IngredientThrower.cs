@@ -8,10 +8,14 @@ public class IngredientThrower : MonoBehaviour
 
     [Header("Throw Settings")]
     [SerializeField] private Transform throwPoint;
+    [SerializeField] private Transform cameraTransform;
+    [SerializeField] private float aimDistance = 50f;
+    [SerializeField] private LayerMask aimLayerMask = ~0;
 
     [Header("Owner Throw Settings")]
     [SerializeField] private float throwForceMultiplier = 1f;
-    
+
+
     public void OnThrow(InputValue value)
     {
         if (!value.isPressed) return;
@@ -25,10 +29,12 @@ public class IngredientThrower : MonoBehaviour
 
         if (!CanThrow()) return;
 
+        Vector3 throwDirection = GetCameraAimDirection();
+
         GameObject projectile = Instantiate(
             currentIngredient.projectilePrefab,
             throwPoint.position,
-            throwPoint.rotation
+            Quaternion.LookRotation(throwDirection)
         );
 
         AssignOwner(projectile);
@@ -38,13 +44,40 @@ public class IngredientThrower : MonoBehaviour
         if (rb != null)
         {
             rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
 
             float finalThrowForce = currentIngredient.throwForce * throwForceMultiplier;
 
-            rb.AddForce(throwPoint.forward * finalThrowForce, ForceMode.Impulse);
+            rb.AddForce(throwDirection * finalThrowForce, ForceMode.Impulse);
         }
 
         Destroy(projectile, currentIngredient.lifeTime);
+    }
+
+    private Vector3 GetCameraAimDirection()
+    {
+        if (cameraTransform == null)
+        {
+            return throwPoint.forward;
+        }
+
+        Ray ray = new Ray(cameraTransform.position, cameraTransform.forward);
+
+        Vector3 targetPoint;
+
+        if (Physics.Raycast(ray, out RaycastHit hit, aimDistance, aimLayerMask))
+        {
+            targetPoint = hit.point;
+        }
+        else
+        {
+            targetPoint = cameraTransform.position + cameraTransform.forward * aimDistance;
+        }
+
+        Vector3 direction = targetPoint - throwPoint.position;
+        direction.Normalize();
+
+        return direction;
     }
 
     public void ThrowIngredientTowards(Vector3 targetPosition)
@@ -66,6 +99,7 @@ public class IngredientThrower : MonoBehaviour
         if (rb != null)
         {
             rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
 
             Vector3 direction = targetPosition - throwPoint.position;
 
