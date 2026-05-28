@@ -45096,6 +45096,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 8434233456619856176, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 1040005430}
     - target: {fileID: 8998861600645619711, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: burgerStats
       value: 
