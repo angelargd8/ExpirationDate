@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private TMP_Text timeText;
     [SerializeField] private GameObject resultPanel;
     [SerializeField] private TMP_Text resultText;
+    [SerializeField] private Button restartButton;
+    [SerializeField] private Button quitButton;
 
     private int currentGameMinutes;
     private int endGameMinutes;
@@ -59,15 +62,35 @@ public class LevelManager : MonoBehaviour
         BurgerStats newPlayerStats,
         TMP_Text newTimeText,
         GameObject newResultPanel,
-        TMP_Text newResultText
+        TMP_Text newResultText,
+        Button newRestartButton,
+        Button newQuitButton
     )
     {
         playerStats = newPlayerStats;
         timeText = newTimeText;
         resultPanel = newResultPanel;
         resultText = newResultText;
+        restartButton = newRestartButton;
+        quitButton = newQuitButton;
 
+        ConfigureButtons();
         ResetLevelState();
+    }
+
+    private void ConfigureButtons()
+    {
+        if (restartButton != null)
+        {
+            restartButton.onClick.RemoveAllListeners();
+            restartButton.onClick.AddListener(RestartLevel);
+        }
+
+        if (quitButton != null)
+        {
+            quitButton.onClick.RemoveAllListeners();
+            quitButton.onClick.AddListener(QuitGame);
+        }
     }
 
     private void ResetLevelState()
@@ -181,7 +204,12 @@ public class LevelManager : MonoBehaviour
         Time.timeScale = 1f;
 
         Debug.Log("Quit Game");
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
     }
 
     public void LoseGame()
@@ -193,5 +221,4 @@ public class LevelManager : MonoBehaviour
     {
         ShowResult(true);
     }
-
-}   
+}

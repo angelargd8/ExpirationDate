@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     private bool isLoading = false;
 
+    
+
 
     private void Awake()
     {
@@ -94,6 +96,6 @@ public class GameManager : MonoBehaviour
         isLoading = false;
     }
 
-
+    
 
 }

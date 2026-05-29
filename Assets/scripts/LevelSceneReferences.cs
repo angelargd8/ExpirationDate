@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class LevelSceneReferences : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class LevelSceneReferences : MonoBehaviour
     [SerializeField] private TMP_Text timeText;
     [SerializeField] private GameObject resultPanel;
     [SerializeField] private TMP_Text resultText;
+    [SerializeField] private Button restartButton;
+    [SerializeField] private Button quitButton;
 
     private void Start()
     {
@@ -23,7 +26,9 @@ public class LevelSceneReferences : MonoBehaviour
             playerStats,
             timeText,
             resultPanel,
-            resultText
+            resultText,
+            restartButton,
+            quitButton
         );
     }
 }

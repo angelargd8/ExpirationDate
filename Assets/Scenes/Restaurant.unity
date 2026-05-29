@@ -45830,6 +45830,8 @@ MonoBehaviour:
   timeText: {fileID: 1551742679}
   resultPanel: {fileID: 573249355}
   resultText: {fileID: 1009999479}
+  restartButton: {fileID: 1469274776}
+  quitButton: {fileID: 809883746}
 --- !u!4 &1821318623
 Transform:
   m_ObjectHideFlags: 0
