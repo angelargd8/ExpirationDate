@@ -25,6 +25,11 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Button restartButton;
     [SerializeField] private Button quitButton;
 
+    [Header("Enemy Settings")]
+    [SerializeField] private int totalEnemies = 13;
+    [SerializeField] private int defeatedEnemies = 0;
+
+
     private int currentGameMinutes;
     private int endGameMinutes;
     private float timer;
@@ -137,7 +142,13 @@ public class LevelManager : MonoBehaviour
 
         float freshnessPercentage = playerStats.GetFreshnessPercentage();
 
-        if (freshnessPercentage >= requiredFreshnessPercentage)
+        bool hasEnoughFreshness = freshnessPercentage >= requiredFreshnessPercentage;
+        bool allEnemiesDefeated = defeatedEnemies >= totalEnemies;
+
+        Debug.Log("Frescura suficiente: " + hasEnoughFreshness);
+        Debug.Log("Todos los enemigos derrotados: " + allEnemiesDefeated);
+
+        if (hasEnoughFreshness && allEnemiesDefeated)
         {
             ShowResult(true);
         }
@@ -194,6 +205,7 @@ public class LevelManager : MonoBehaviour
     public void RestartLevel()
     {
         Time.timeScale = 1f;
+        defeatedEnemies = 0;
 
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
@@ -221,4 +233,15 @@ public class LevelManager : MonoBehaviour
     {
         ShowResult(true);
     }
+
+
+    public void RegisterEnemyDefeated()
+    {
+        if (gameEnded) return;
+
+        defeatedEnemies++;
+
+        Debug.Log("Enemigos derrotados: " + defeatedEnemies + " / " + totalEnemies);
+    }
+
 }

@@ -18,6 +18,8 @@ public class BurgerStats : MonoBehaviour
     [SerializeField] private float freshnessLossInterval = 1f;
     [SerializeField] private int freshnessLossAmount = 1;
 
+
+
     private float freshnessTimer;
     private bool isDead = false;
 
@@ -122,6 +124,14 @@ public class BurgerStats : MonoBehaviour
         }
         else
         {
+            if (LevelManager.Instance != null)
+            {
+                LevelManager.Instance.RegisterEnemyDefeated();
+            }
+            else
+            {
+                Debug.LogWarning("No existe LevelManager.Instance");
+            }
             gameObject.SetActive(false);
         }
     }

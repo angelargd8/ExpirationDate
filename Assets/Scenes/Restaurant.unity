@@ -51812,7 +51812,7 @@ MonoBehaviour:
   maxFreshness: 100
   currentFreshness: 50
   reduceFreshnessOverTime: 1
-  freshnessLossInterval: 7
+  freshnessLossInterval: 6
   freshnessLossAmount: 1
 --- !u!1 &2026743359
 GameObject:
