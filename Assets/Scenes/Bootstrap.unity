@@ -552,6 +552,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d50368ee42943742ac8837d4945b808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  playerStats: {fileID: 0}
+  startHour: 20
+  endHour: 24
+  secondsPerGameMinute: 1
+  requiredFreshnessPercentage: 0.6
+  timeText: {fileID: 0}
+  resultPanel: {fileID: 0}
+  resultText: {fileID: 0}
 --- !u!1 &1234442735
 GameObject:
   m_ObjectHideFlags: 0

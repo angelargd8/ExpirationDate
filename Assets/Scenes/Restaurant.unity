@@ -3699,9 +3699,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1616183817637668910, guid: 9c9cdb25d1496bc4283140ff5290d4f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2633217101154489012, guid: 9c9cdb25d1496bc4283140ff5290d4f2, type: 3}
       propertyPath: m_Name
       value: FFK_Stool_01_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633217101154489012, guid: 9c9cdb25d1496bc4283140ff5290d4f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4347,6 +4355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
+  isPlayer: 0
   maxLife: 100
   currentLife: 100
   maxFreshness: 100
@@ -4525,6 +4534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
+  isPlayer: 0
   maxLife: 100
   currentLife: 100
   maxFreshness: 100
@@ -8446,9 +8456,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1616183817637668910, guid: 4ada60c29a249cd4682acbb07b830ca1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2633217101154489012, guid: 4ada60c29a249cd4682acbb07b830ca1, type: 3}
       propertyPath: m_Name
       value: FFK_Stool_01_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633217101154489012, guid: 4ada60c29a249cd4682acbb07b830ca1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13486,7 +13504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6470588, g: 0.1647059, b: 0.1647059, a: 1}
+  m_Color: {r: 0.5450981, g: 0, b: 0, a: 0.019607844}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14383,6 +14401,14 @@ PrefabInstance:
     - target: {fileID: 881939544334838205, guid: 6aa2d3c9e99bef54ab0984ca866bf171, type: 3}
       propertyPath: m_Name
       value: FFK_Chair_01_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 881939544334838205, guid: 6aa2d3c9e99bef54ab0984ca866bf171, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5944154087189558018, guid: 6aa2d3c9e99bef54ab0984ca866bf171, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6848067326153376415, guid: 6aa2d3c9e99bef54ab0984ca866bf171, type: 3}
       propertyPath: m_Layer
@@ -19275,7 +19301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 337.3333, y: -335.5}
+  m_AnchoredPosition: {x: 345.6667, y: -348.16666}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &809883746
@@ -22199,6 +22225,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FFK_Chair_01_02
       objectReference: {fileID: 0}
+    - target: {fileID: 881939544334838205, guid: 6aa2d3c9e99bef54ab0984ca866bf171, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5944154087189558018, guid: 6aa2d3c9e99bef54ab0984ca866bf171, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6848067326153376415, guid: 6aa2d3c9e99bef54ab0984ca866bf171, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -24316,6 +24350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
+  isPlayer: 0
   maxLife: 100
   currentLife: 100
   maxFreshness: 100
@@ -24571,7 +24606,7 @@ GameObject:
   - component: {fileID: 1009999480}
   - component: {fileID: 1009999479}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ResultText (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24593,7 +24628,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 337.3333, y: -245.5}
+  m_AnchoredPosition: {x: 345.6667, y: -258.16666}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1009999479
@@ -24618,8 +24653,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: You win/lose
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5adb60e344ce6e44faadfe928e5985b1, type: 2}
+  m_sharedMaterial: {fileID: -5612836975970858756, guid: 5adb60e344ce6e44faadfe928e5985b1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -24627,13 +24662,13 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
+  m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topLeft: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
     topRight: {r: 1, g: 1, b: 1, a: 1}
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -24660,7 +24695,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -25408,8 +25443,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 573249356}
   - {fileID: 1759249607}
+  - {fileID: 573249356}
   m_Father: {fileID: 1097373431}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -29545,9 +29580,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1616183817637668910, guid: 9c9cdb25d1496bc4283140ff5290d4f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2633217101154489012, guid: 9c9cdb25d1496bc4283140ff5290d4f2, type: 3}
       propertyPath: m_Name
       value: FFK_Stool_01_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633217101154489012, guid: 9c9cdb25d1496bc4283140ff5290d4f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30562,6 +30605,10 @@ PrefabInstance:
     - target: {fileID: 1014687319180799827, guid: 4ada60c29a249cd4682acbb07b830ca1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616183817637668910, guid: 4ada60c29a249cd4682acbb07b830ca1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2633217101154489012, guid: 4ada60c29a249cd4682acbb07b830ca1, type: 3}
       propertyPath: m_Name
@@ -31929,6 +31976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
+  isPlayer: 0
   maxLife: 100
   currentLife: 100
   maxFreshness: 100
@@ -34962,6 +35010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
+  isPlayer: 0
   maxLife: 100
   currentLife: 100
   maxFreshness: 100
@@ -36892,7 +36941,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 337.3333, y: -295.5}
+  m_AnchoredPosition: {x: 345.6667, y: -308.16666}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1469274776
@@ -39007,7 +39056,7 @@ GameObject:
   - component: {fileID: 1551742680}
   - component: {fileID: 1551742679}
   m_Layer: 5
-  m_Name: Time
+  m_Name: TimeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39052,7 +39101,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Time: 5.00'
+  m_text: 'Time: 8:00 pm'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5adb60e344ce6e44faadfe928e5985b1, type: 2}
   m_sharedMaterial: {fileID: -5612836975970858756, guid: 5adb60e344ce6e44faadfe928e5985b1, type: 2}
@@ -39069,7 +39118,7 @@ MonoBehaviour:
     topLeft: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
     topRight: {r: 1, g: 1, b: 1, a: 1}
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -44136,7 +44185,7 @@ GameObject:
   - component: {fileID: 1759249609}
   - component: {fileID: 1759249608}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: TimePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45587,6 +45636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
+  isPlayer: 0
   maxLife: 100
   currentLife: 100
   maxFreshness: 100
@@ -45735,6 +45785,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5322349442979019853, guid: 1a7ee6b8409d984478bcc1746266691b, type: 3}
   m_PrefabInstance: {fileID: 946197575}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1821318621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1821318623}
+  - component: {fileID: 1821318622}
+  m_Layer: 0
+  m_Name: LevelScenesReferences
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1821318622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821318621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdbd956ab29a975458685a4d0d22a9c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  playerStats: {fileID: 2024207188}
+  timeText: {fileID: 1551742679}
+  resultPanel: {fileID: 573249355}
+  resultText: {fileID: 1009999479}
+--- !u!4 &1821318623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821318621}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.47821, y: 1.97833, z: 16.15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1821470615
 GameObject:
   m_ObjectHideFlags: 0
@@ -46624,7 +46722,11 @@ PrefabInstance:
     - target: {fileID: 2918220973931744935, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: targetStats
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2024207188}
+    - target: {fileID: 2918220973931744935, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 1040005430}
     - target: {fileID: 2920334238840140896, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: m_Type
       value: 3
@@ -46836,7 +46938,7 @@ PrefabInstance:
     - target: {fileID: 8998861600645619711, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: burgerStats
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2024207188}
     - target: {fileID: 9198072592998759570, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: m_NotificationBehavior
       value: 0
@@ -47802,6 +47904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
+  isPlayer: 0
   maxLife: 100
   currentLife: 100
   maxFreshness: 100
@@ -48892,6 +48995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
+  isPlayer: 0
   maxLife: 100
   currentLife: 100
   maxFreshness: 100
@@ -50839,6 +50943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
+  isPlayer: 0
   maxLife: 100
   currentLife: 100
   maxFreshness: 100
@@ -51687,6 +51792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
+  isPlayer: 1
   maxLife: 100
   currentLife: 100
   maxFreshness: 100
@@ -53043,6 +53149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85977c75c80ecbc40bc3d461dcda4413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BurgerStats
+  isPlayer: 0
   maxLife: 100
   currentLife: 100
   maxFreshness: 100
@@ -54797,3 +54904,4 @@ SceneRoots:
   - {fileID: 960979195}
   - {fileID: 297274248}
   - {fileID: 1097373431}
+  - {fileID: 1821318623}

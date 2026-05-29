@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class BurgerStats : MonoBehaviour
 {
+    [Header("Tipo de hamburguesa")]
+    [SerializeField] private bool isPlayer = false;
+
     [Header("Vida")]
     [SerializeField] private int maxLife = 100;
     [SerializeField] private int currentLife = 100;
@@ -16,6 +19,7 @@ public class BurgerStats : MonoBehaviour
     [SerializeField] private int freshnessLossAmount = 1;
 
     private float freshnessTimer;
+    private bool isDead = false;
 
     private void Awake()
     {
@@ -25,6 +29,8 @@ public class BurgerStats : MonoBehaviour
 
     private void Update()
     {
+        if (isDead) return;
+
         if (!reduceFreshnessOverTime) return;
 
         freshnessTimer += Time.deltaTime;
@@ -49,27 +55,41 @@ public class BurgerStats : MonoBehaviour
     }
 
 
-
     public void Heal(int amount)
     {
+        if (isDead) return;
+
         currentLife += amount;
         currentLife = Mathf.Clamp(currentLife, 0, maxLife);
     }
 
     public void ReduceFreshness(int amount)
     {
+        if (isDead) return;
+
         currentFreshness -= amount;
         currentFreshness = Mathf.Clamp(currentFreshness, 0, maxFreshness);
+
+        Debug.Log(gameObject.name + " frescura actual: " + currentFreshness);
+
+        if (currentFreshness <= 0 && isPlayer)
+        {
+            Die();
+        }
     }
 
     public void AddFreshness(int amount)
     {
+        if (isDead) return;
+
         currentFreshness += amount;
         currentFreshness = Mathf.Clamp(currentFreshness, 0, maxFreshness);
     }
 
     public void TakeDamage(int amount)
     {
+        if (isDead) return;
+
         currentLife -= amount;
         currentLife = Mathf.Clamp(currentLife, 0, maxLife);
 
@@ -83,15 +103,32 @@ public class BurgerStats : MonoBehaviour
 
     private void Die()
     {
+        if (isDead) return;
+
+        isDead = true;
+
         Debug.Log(gameObject.name + " fue derrotado");
 
-      
-        gameObject.SetActive(false);
+        if (isPlayer)
+        {
+            if (LevelManager.Instance != null)
+            {
+                LevelManager.Instance.LoseGame();
+            }
+            else
+            {
+                Debug.LogWarning("No existe LevelManager.Instance");
+            }
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
     }
-
 
     public void ApplyIngredient(IngredientDataPickUp ingredientData)
     {
+        if (isDead) return;
         if (ingredientData == null) return;
 
         if (ingredientData.lifeAmount > 0)
