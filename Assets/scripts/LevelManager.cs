@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private BurgerStats playerStats;
 
     [Header("Time Settings")]
-    [SerializeField] private int startHour = 20;
+    [SerializeField] private int startHour = 19;
     [SerializeField] private int endHour = 24;
     [SerializeField] private float secondsPerGameMinute = 1f;
 

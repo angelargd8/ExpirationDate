@@ -553,7 +553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   playerStats: {fileID: 0}
-  startHour: 20
+  startHour: 19
   endHour: 24
   secondsPerGameMinute: 1
   requiredFreshnessPercentage: 0.6
