@@ -24,6 +24,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private TMP_Text resultText;
     [SerializeField] private Button restartButton;
     [SerializeField] private Button quitButton;
+    [SerializeField] private TMP_Text enemiesText;
 
     [Header("Enemy Settings")]
     [SerializeField] private int totalEnemies = 13;
@@ -69,7 +70,8 @@ public class LevelManager : MonoBehaviour
         GameObject newResultPanel,
         TMP_Text newResultText,
         Button newRestartButton,
-        Button newQuitButton
+        Button newQuitButton,
+        TMP_Text newEnemiesText
     )
     {
         playerStats = newPlayerStats;
@@ -78,6 +80,7 @@ public class LevelManager : MonoBehaviour
         resultText = newResultText;
         restartButton = newRestartButton;
         quitButton = newQuitButton;
+        enemiesText = newEnemiesText;
 
         ConfigureButtons();
         ResetLevelState();
@@ -105,6 +108,7 @@ public class LevelManager : MonoBehaviour
 
         timer = 0f;
         gameEnded = false;
+        defeatedEnemies = 0;
 
         Time.timeScale = 1f;
 
@@ -117,6 +121,7 @@ public class LevelManager : MonoBehaviour
         Cursor.visible = false;
 
         UpdateTimeUI();
+        UpdateEnemiesUI();
     }
 
     private void AdvanceOneGameMinute()
@@ -240,8 +245,18 @@ public class LevelManager : MonoBehaviour
         if (gameEnded) return;
 
         defeatedEnemies++;
+        defeatedEnemies = Mathf.Clamp(defeatedEnemies, 0, totalEnemies);
+
+        UpdateEnemiesUI();
 
         Debug.Log("Enemigos derrotados: " + defeatedEnemies + " / " + totalEnemies);
+    }
+
+    private void UpdateEnemiesUI()
+    {
+        if (enemiesText == null) return;
+
+        enemiesText.text = "ENEMIES: " + defeatedEnemies + " / " + totalEnemies;
     }
 
 }
