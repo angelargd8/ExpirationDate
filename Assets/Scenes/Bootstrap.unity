@@ -170,7 +170,7 @@ MonoBehaviour:
   musicSource: {fileID: 503431596}
   mainMenuMusic: {fileID: 8300000, guid: ed9b9bf18a251e74cb9572806ff23c70, type: 3}
   RestaurantMusic: {fileID: 8300000, guid: cda21f8104c1e1d4299bdba8c51dec3f, type: 3}
-  loadingMusic: {fileID: 8300000, guid: c04824a3bc98d514497525bb97c05e10, type: 3}
+  loadingMusic: {fileID: 8300000, guid: a11be7d955c15d544a319671b85c0aa1, type: 3}
 --- !u!82 &503431595
 AudioSource:
   m_ObjectHideFlags: 0
@@ -566,7 +566,10 @@ MonoBehaviour:
   menuButton: {fileID: 0}
   enemiesText: {fileID: 0}
   pausePanel: {fileID: 0}
-  resumeButton: {fileID: 0}
+  pauseResumeButton: {fileID: 0}
+  pauseRestartButton: {fileID: 0}
+  pauseMenuButton: {fileID: 0}
+  pauseQuitButton: {fileID: 0}
   totalEnemies: 20
   defeatedEnemies: 0
 --- !u!1 &1234442735
