@@ -6,4 +6,9 @@ public class MainMenu : MonoBehaviour
     {
         GameManager.instance.LoadScene("Restaurant");
     }
+
+    public void QuitGame()
+    {
+        GameManager.instance.QuitGame();
+    }
 }

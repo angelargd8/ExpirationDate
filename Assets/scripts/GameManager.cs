@@ -44,6 +44,19 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadSceneAsync(sceneName));
     }
 
+    public void QuitGame()
+    {
+        Time.timeScale = 1f;
+
+        Debug.Log("Quit Game");
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
+
     private IEnumerator LoadSceneAsync(string sceneName)
     {
         isLoading = true;

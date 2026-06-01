@@ -236,15 +236,7 @@ public class LevelManager : MonoBehaviour
 
     public void QuitGame()
     {
-        Time.timeScale = 1f;
-
-        Debug.Log("Quit Game");
-
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
+        GameManager.instance.QuitGame();
     }
 
     public void LoseGame()
