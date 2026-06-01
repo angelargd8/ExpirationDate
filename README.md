@@ -15,12 +15,30 @@
 
 ### Niveles jugables:
 - Restaurant
-
+---
 ### Breve descripcion del proyecto:
-Eres una hamburguesa que está por vencer, entonces será tirada al día siguiente si no cambias tus ingredientes. Por lo tanto, luego de cerrar el local debes de encontrar ingredientes frescos mientras te enfrentas contra otras hamburguesas que también buscan nuevos ingredientes y las hamburguesas frescas que no quieren contaminarse. 
+
+ExpirationDate es un videojuego desarrollado en Unity donde el jugador controla una hamburguesa que está por vencer. Si no logra cambiar sus ingredientes y mantenerse fresca, será tirada al día siguiente.
+
+El juego se desarrolla dentro de un restaurante después del cierre del local. El jugador debe explorar el escenario, recolectar ingredientes frescos, evitar perder frescura y enfrentarse a otras hamburguesas que también buscan sobrevivir.
+
+La experiencia combina mecánicas de movimiento en tercera persona, salto, sprint, recolección de ingredientes, lanzamiento de proyectiles, sistema de vida, frescura, enemigos con inteligencia artificial, combate y condiciones de victoria y derrota.
 
 
-El juego se desarrolla dentro de un restaurante y utiliza mecánicas de movimiento en tercera persona, salto, sprint, interacción, recolección de ingredientes y lanzamiento de ingredientes como proyectiles.
+## Objetivo del juego
+
+El objetivo principal del jugador es sobrevivir dentro del restaurante mientras mantiene su vida y frescura.
+
+Para lograrlo, el jugador debe:
+
+- Moverse por el escenario.
+- Recolectar ingredientes.
+- Lanzar ingredientes como proyectiles.
+- Enfrentarse a hamburguesas enemigas.
+- Evitar perder toda su vida o frescura.
+- Llegar a la zona final para activar la victoria.
+
+----
 
 
 ## Sistemas principales implementados
@@ -98,6 +116,11 @@ El script usa acciones del New Input System como:
 - Look
 - Jump
 - Sprint
+
+El movimiento se maneja desde el script:
+
+- PlayerMovement
+
 ---
 
 ## Sistema de cámara
@@ -258,6 +281,58 @@ Ejemplos de datos configurables:
 - PattyData
 
 Actualmente se implementó el tomate como ingrediente lanzable y se está trabajando en ingredientes recolectables como queso, lechuga, tomate y carne.
+
+
+## Sistema de enemigos
+
+El juego cuenta con enemigos controlados por inteligencia artificial. Estos enemigos pueden detectar al jugador, moverse por el escenario y atacarlo utilizando ingredientes como proyectiles.
+
+Se implementaron diferentes comportamientos de enemigos:
+
+- Enemy Burger 1: patrulla por el escenario, detecta al jugador y lo ataca cuando está dentro de su rango.
+- Enemy Burger 2: mantiene distancia del jugador, intenta huir si el jugador se acerca demasiado y ataca desde lejos.
+
+Cada enemigo tiene:
+
+- Vida máxima
+- Daño
+- Rango de detección
+- Rango de ataque
+- Velocidad de movimiento
+- Distancia de disparo
+- Tiempo entre ataques
+- Ingrediente que lanza
+
+
+---
+
+## Efecto visual de daño
+
+Se implementó un efecto de post-processing utilizando Vignette para representar visualmente el estado de salud del jugador.
+
+Cuando la vida del jugador baja de la mitad, la intensidad del Vignette comienza a aumentar gradualmente.
+
+Mientras menos vida tenga el jugador, más fuerte se vuelve el efecto, hasta llegar a una intensidad máxima cuando la vida llega a 0.
+
+---
+
+## Animaciones
+
+El jugador cuenta con animaciones controladas con el Animator.
+
+Actualmente se utilizan animaciones para:
+
+- Estado Idle.
+- Salto del jugador.
+
+El salto se activa mediante un parámetro Trigger desde el script de movimiento del jugador.
+
+
+---
+
+## Condiciones de victoria y derrota
+
+La condición de victoria es que el jugador venció a todos los enemigos del nivel y su barra de frescura es lo suficientemente alta. De lo contrario, pierde. 
 
 
 
