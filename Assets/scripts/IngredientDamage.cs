@@ -5,6 +5,9 @@ public class IngredientDamage : MonoBehaviour
     [Header("Damage")]
     [SerializeField] private int damage = 10;
 
+    [Header("SFX")]
+    [SerializeField] private AudioClip audioSFX;
+
     private GameObject owner;
 
     public void SetOwner(GameObject newOwner)
@@ -21,10 +24,13 @@ public class IngredientDamage : MonoBehaviour
         }
 
         BurgerStats stats = collision.gameObject.GetComponentInParent<BurgerStats>();
+        
 
         if (stats != null)
         {
+            
             stats.TakeDamage(damage);
+            AudioManager.Instance.PlaySFX(audioSFX);
 
             Debug.Log(gameObject.name + " hizo " + damage + " de daño a " + stats.gameObject.name);
 

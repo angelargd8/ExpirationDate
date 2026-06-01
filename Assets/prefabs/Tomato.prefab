@@ -155,4 +155,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::IngredientDamage
   damage: 10
-  destroyOnHit: 1
+  audioSFX: {fileID: 8300000, guid: de355521dd48f414cb821c0497a8b1a4, type: 3}
