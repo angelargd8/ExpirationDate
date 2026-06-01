@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private TMP_Text enemiesText;
 
     [Header("Enemy Settings")]
-    [SerializeField] private int totalEnemies = 13;
+    [SerializeField] private int totalEnemies = 20;
     [SerializeField] private int defeatedEnemies = 0;
 
 

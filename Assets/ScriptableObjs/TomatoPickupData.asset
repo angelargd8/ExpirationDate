@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::IngredientDataPickUp
   ingredientName: Tomato
   ingredientType: 2
-  lifeAmount: 1000
+  lifeAmount: 50
   freshnessAmount: 5
   destroyOnPickup: 1

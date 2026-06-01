@@ -564,7 +564,7 @@ MonoBehaviour:
   restartButton: {fileID: 0}
   quitButton: {fileID: 0}
   enemiesText: {fileID: 0}
-  totalEnemies: 13
+  totalEnemies: 20
   defeatedEnemies: 0
 --- !u!1 &1234442735
 GameObject:
