@@ -13,6 +13,7 @@ public class LevelSceneReferences : MonoBehaviour
     [SerializeField] private TMP_Text resultText;
     [SerializeField] private Button restartButton;
     [SerializeField] private Button quitButton;
+    [SerializeField] private Button menuButton;
     [SerializeField] private TMP_Text enemiesText;
 
     private void Start()
@@ -30,6 +31,7 @@ public class LevelSceneReferences : MonoBehaviour
             resultText,
             restartButton,
             quitButton, 
+            menuButton,
             enemiesText
         );
     }

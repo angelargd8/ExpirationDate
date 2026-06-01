@@ -24,6 +24,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private TMP_Text resultText;
     [SerializeField] private Button restartButton;
     [SerializeField] private Button quitButton;
+    [SerializeField] private Button menuButton;
     [SerializeField] private TMP_Text enemiesText;
 
     [Header("Enemy Settings")]
@@ -71,6 +72,7 @@ public class LevelManager : MonoBehaviour
         TMP_Text newResultText,
         Button newRestartButton,
         Button newQuitButton,
+        Button newMenuButton,
         TMP_Text newEnemiesText
     )
     {
@@ -80,6 +82,7 @@ public class LevelManager : MonoBehaviour
         resultText = newResultText;
         restartButton = newRestartButton;
         quitButton = newQuitButton;
+        menuButton = newMenuButton;
         enemiesText = newEnemiesText;
 
         ConfigureButtons();
@@ -92,6 +95,12 @@ public class LevelManager : MonoBehaviour
         {
             restartButton.onClick.RemoveAllListeners();
             restartButton.onClick.AddListener(RestartLevel);
+        }
+
+        if (menuButton != null)
+        {
+            menuButton.onClick.RemoveAllListeners();
+            menuButton.onClick.AddListener(Menu);
         }
 
         if (quitButton != null)
@@ -214,6 +223,15 @@ public class LevelManager : MonoBehaviour
 
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
+    }
+
+    public void Menu()
+    {
+        Time.timeScale = 1f;
+        defeatedEnemies = 0;
+
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()
