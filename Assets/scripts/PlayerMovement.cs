@@ -21,7 +21,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float mouseSensitivity = 100f;
     [SerializeField] private float minPitch = -30f;
     [SerializeField] private float maxPitch = 65f;
-    
+
+    [Header("Animation")]
+    [SerializeField] private Animator burgerAnimator;
+
     private Rigidbody rb;
     private PlayerInput playerInput;
 
@@ -190,6 +193,11 @@ public class PlayerMovement : MonoBehaviour
         if (!isGrounded) return;
 
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+
+        if (burgerAnimator != null)
+        {
+            burgerAnimator.SetTrigger("Jump");
+        }
     }
 
     private void OnSprintPerformed(InputAction.CallbackContext context)

@@ -25651,7 +25651,7 @@ Transform:
   m_GameObject: {fileID: 1040005426}
   serializedVersion: 2
   m_LocalRotation: {x: 0.034899488, y: 0.000013096244, z: -0.00037502745, w: 0.9993908}
-  m_LocalPosition: {x: 9.548, y: 0.939, z: 8.883}
+  m_LocalPosition: {x: 9.548, y: 0.939, z: 8.883001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46864,6 +46864,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1770764908936046593, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: burgerAnimator
+      value: 
+      objectReference: {fileID: 1926128791}
+    - target: {fileID: 1770764908936046593, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 1040005430}
@@ -49310,6 +49314,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75c16d4794f25e84ea8d82ee45dd1937, type: 3}
+--- !u!95 &1926128791 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1365086827112587775, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+  m_PrefabInstance: {fileID: 1842607681}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1932309640
 GameObject:
   m_ObjectHideFlags: 0
