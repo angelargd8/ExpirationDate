@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class LevelManager : MonoBehaviour
 {
@@ -27,6 +28,13 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Button menuButton;
     [SerializeField] private TMP_Text enemiesText;
 
+    [Header("Pause UI")]
+    [SerializeField] private GameObject pausePanel;
+    [SerializeField] private Button pauseResumeButton;
+    [SerializeField] private Button pauseRestartButton;
+    [SerializeField] private Button pauseMenuButton;
+    [SerializeField] private Button pauseQuitButton;
+
     [Header("Enemy Settings")]
     [SerializeField] private int totalEnemies = 20;
     [SerializeField] private int defeatedEnemies = 0;
@@ -36,6 +44,7 @@ public class LevelManager : MonoBehaviour
     private int endGameMinutes;
     private float timer;
     private bool gameEnded;
+    private bool isPaused;
 
     private void Awake()
     {
@@ -53,7 +62,13 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            TogglePause();
+        }
+
         if (gameEnded) return;
+        if (isPaused) return;
         if (timeText == null) return;
 
         timer += Time.deltaTime;
@@ -66,31 +81,43 @@ public class LevelManager : MonoBehaviour
     }
 
     public void RegisterLevelReferences(
-        BurgerStats newPlayerStats,
-        TMP_Text newTimeText,
-        GameObject newResultPanel,
-        TMP_Text newResultText,
-        Button newRestartButton,
-        Button newQuitButton,
-        Button newMenuButton,
-        TMP_Text newEnemiesText
-    )
-    {
-        playerStats = newPlayerStats;
-        timeText = newTimeText;
-        resultPanel = newResultPanel;
-        resultText = newResultText;
-        restartButton = newRestartButton;
-        quitButton = newQuitButton;
-        menuButton = newMenuButton;
-        enemiesText = newEnemiesText;
+         BurgerStats newPlayerStats,
+         TMP_Text newTimeText,
+         GameObject newResultPanel,
+         TMP_Text newResultText,
+         Button newRestartButton,
+         Button newQuitButton,
+         Button newMenuButton,
+         TMP_Text newEnemiesText,
+         GameObject newPausePanel,
+         Button newPauseResumeButton,
+         Button newPauseRestartButton,
+         Button newPauseMenuButton,
+         Button newPauseQuitButton
+     )
+        {
+            playerStats = newPlayerStats;
+            timeText = newTimeText;
+            resultPanel = newResultPanel;
+            resultText = newResultText;
+            restartButton = newRestartButton;
+            quitButton = newQuitButton;
+            menuButton = newMenuButton;
+            enemiesText = newEnemiesText;
 
-        ConfigureButtons();
-        ResetLevelState();
+            pausePanel = newPausePanel;
+            pauseResumeButton = newPauseResumeButton;
+            pauseRestartButton = newPauseRestartButton;
+            pauseMenuButton = newPauseMenuButton;
+            pauseQuitButton = newPauseQuitButton;
+
+            ConfigureButtons();
+            ResetLevelState();
     }
 
     private void ConfigureButtons()
     {
+        //panel de resultado
         if (restartButton != null)
         {
             restartButton.onClick.RemoveAllListeners();
@@ -108,6 +135,31 @@ public class LevelManager : MonoBehaviour
             quitButton.onClick.RemoveAllListeners();
             quitButton.onClick.AddListener(QuitGame);
         }
+
+        // panel de pausa
+        if (pauseResumeButton != null)
+        {
+            pauseResumeButton.onClick.RemoveAllListeners();
+            pauseResumeButton.onClick.AddListener(ResumeGame);
+        }
+
+        if (pauseRestartButton != null)
+        {
+            pauseRestartButton.onClick.RemoveAllListeners();
+            pauseRestartButton.onClick.AddListener(RestartLevel);
+        }
+
+        if (pauseMenuButton != null)
+        {
+            pauseMenuButton.onClick.RemoveAllListeners();
+            pauseMenuButton.onClick.AddListener(Menu);
+        }
+
+        if (pauseQuitButton != null)
+        {
+            pauseQuitButton.onClick.RemoveAllListeners();
+            pauseQuitButton.onClick.AddListener(QuitGame);
+        }
     }
 
     private void ResetLevelState()
@@ -117,6 +169,7 @@ public class LevelManager : MonoBehaviour
 
         timer = 0f;
         gameEnded = false;
+        isPaused = false;
         defeatedEnemies = 0;
 
         Time.timeScale = 1f;
@@ -124,6 +177,11 @@ public class LevelManager : MonoBehaviour
         if (resultPanel != null)
         {
             resultPanel.SetActive(false);
+        }
+
+        if (pausePanel != null)
+        {
+            pausePanel.SetActive(false);
         }
 
         Cursor.lockState = CursorLockMode.Locked;
@@ -267,6 +325,54 @@ public class LevelManager : MonoBehaviour
         if (enemiesText == null) return;
 
         enemiesText.text = "ENEMIES: " + defeatedEnemies + " / " + totalEnemies;
+    }
+
+    public void TogglePause()
+    {
+        if (gameEnded) return;
+
+        if (isPaused)
+        {
+            ResumeGame();
+        }
+        else
+        {
+            PauseGame();
+        }
+    }
+
+    public void PauseGame()
+    {
+        if (gameEnded) return;
+
+        isPaused = true;
+
+        if (pausePanel != null)
+        {
+            pausePanel.SetActive(true);
+        }
+
+        Time.timeScale = 0f;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    public void ResumeGame()
+    {
+        if (gameEnded) return;
+
+        isPaused = false;
+
+        if (pausePanel != null)
+        {
+            pausePanel.SetActive(false);
+        }
+
+        Time.timeScale = 1f;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
 }

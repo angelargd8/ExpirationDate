@@ -563,7 +563,10 @@ MonoBehaviour:
   resultText: {fileID: 0}
   restartButton: {fileID: 0}
   quitButton: {fileID: 0}
+  menuButton: {fileID: 0}
   enemiesText: {fileID: 0}
+  pausePanel: {fileID: 0}
+  resumeButton: {fileID: 0}
   totalEnemies: 20
   defeatedEnemies: 0
 --- !u!1 &1234442735

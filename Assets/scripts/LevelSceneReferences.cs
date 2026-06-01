@@ -7,7 +7,7 @@ public class LevelSceneReferences : MonoBehaviour
     [Header("Player")]
     [SerializeField] private BurgerStats playerStats;
 
-    [Header("UI")]
+    [Header("Result UI")]
     [SerializeField] private TMP_Text timeText;
     [SerializeField] private GameObject resultPanel;
     [SerializeField] private TMP_Text resultText;
@@ -15,6 +15,13 @@ public class LevelSceneReferences : MonoBehaviour
     [SerializeField] private Button quitButton;
     [SerializeField] private Button menuButton;
     [SerializeField] private TMP_Text enemiesText;
+
+    [Header("Pause UI")]
+    [SerializeField] private GameObject pausePanel;
+    [SerializeField] private Button pauseResumeButton;
+    [SerializeField] private Button pauseRestartButton;
+    [SerializeField] private Button pauseMenuButton;
+    [SerializeField] private Button pauseQuitButton;
 
     private void Start()
     {
@@ -30,9 +37,14 @@ public class LevelSceneReferences : MonoBehaviour
             resultPanel,
             resultText,
             restartButton,
-            quitButton, 
+            quitButton,
             menuButton,
-            enemiesText
+            enemiesText,
+            pausePanel,
+            pauseResumeButton,
+            pauseRestartButton,
+            pauseMenuButton,
+            pauseQuitButton
         );
     }
 }
