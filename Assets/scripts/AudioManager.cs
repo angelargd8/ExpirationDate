@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
 
     [Header("Música por escena")]
     [SerializeField] private AudioClip mainMenuMusic;
+    [SerializeField] private AudioClip RestaurantMusic;
     [SerializeField] private AudioClip loadingMusic;
 
     private AudioSource sfxAudio => GetComponents<AudioSource>()[0];
@@ -70,8 +71,8 @@ public class AudioManager : MonoBehaviour
                 newClip = mainMenuMusic;
                 break;
 
-            case "SceneMenu":
-                newClip = mainMenuMusic;
+            case "Restaurant":
+                newClip = RestaurantMusic;
                 break;
 
             case "LoadingScene":

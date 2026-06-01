@@ -168,8 +168,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   audioMixer: {fileID: 24100000, guid: 0b789c4550259cf4ba7eebfaca361441, type: 2}
   musicSource: {fileID: 503431596}
-  mainMenuMusic: {fileID: 0}
-  loadingMusic: {fileID: 0}
+  mainMenuMusic: {fileID: 8300000, guid: ed9b9bf18a251e74cb9572806ff23c70, type: 3}
+  RestaurantMusic: {fileID: 8300000, guid: cda21f8104c1e1d4299bdba8c51dec3f, type: 3}
+  loadingMusic: {fileID: 8300000, guid: c04824a3bc98d514497525bb97c05e10, type: 3}
 --- !u!82 &503431595
 AudioSource:
   m_ObjectHideFlags: 0
@@ -376,10 +377,10 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 6475139643853241891, guid: 0b789c4550259cf4ba7eebfaca361441, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -560,6 +561,11 @@ MonoBehaviour:
   timeText: {fileID: 0}
   resultPanel: {fileID: 0}
   resultText: {fileID: 0}
+  restartButton: {fileID: 0}
+  quitButton: {fileID: 0}
+  enemiesText: {fileID: 0}
+  totalEnemies: 13
+  defeatedEnemies: 0
 --- !u!1 &1234442735
 GameObject:
   m_ObjectHideFlags: 0
