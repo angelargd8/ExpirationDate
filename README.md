@@ -56,6 +56,8 @@ El proyecto utiliza un Input Actions Asset propio para manejar los controles del
 | Sprint | Left Shift | Left Stick Press |
 | Interact | F | Button West |
 | Throw | E / Left Click | Right Trigger |
+| Pause menu | Escape |
+
 
 ## Input System
 
