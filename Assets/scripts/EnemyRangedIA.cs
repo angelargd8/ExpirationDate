@@ -44,6 +44,9 @@ public class EnemyRangedIA : MonoBehaviour
     [SerializeField] private float groundCheckRadius = 0.25f;
     [SerializeField] private LayerMask groundLayer;
 
+    [Header("Animation")]
+    [SerializeField] private Animator burgerAnimator;
+
     private Rigidbody rb;
     private EnemyState currentState = EnemyState.Patrol;
 
@@ -320,6 +323,11 @@ public class EnemyRangedIA : MonoBehaviour
         if (!isGrounded) return;
 
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+
+        if (burgerAnimator != null)
+        {
+            burgerAnimator.SetTrigger("Jump");
+        }
     }
 
     private void OnDrawGizmosSelected()
