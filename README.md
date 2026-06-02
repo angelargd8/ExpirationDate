@@ -8,6 +8,11 @@
 
 [Video click aquí](https://youtu.be/gBgEwOgvfQM)
 
+# DEMO en Itch.io:
+
+[Demo click aquí](https://angelargd8.itch.io/expirationdate)
+
+
 ## Laboratorio 8: Input Actions (progra)
 
 [Video click aquí](https://youtu.be/Ada4mq2WccE)
@@ -17,9 +22,6 @@
 
 [Video click aquí](https://youtu.be/zSqz0dnzF28)
 
-### DEMO en Itch.io:
-
-[Demo click aquí](https://angelargd8.itch.io/expirationdate)
 
 ### Niveles jugables:
 - Restaurant
