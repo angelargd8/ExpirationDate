@@ -1,11 +1,15 @@
 # ExpirationDate
 
+### Vertical Slide:
+
+[Video click aquí](https://youtu.be/dADt2uD0uK4)
+
 ## Laboratorio 8: Input Actions (progra)
 
 [Video click aquí](https://youtu.be/Ada4mq2WccE)
 
 
-### Enlace del video del DEMO (game design):
+### Enlace del video del DEMO avances segunda entrega (game design):
 
 [Video click aquí](https://youtu.be/zSqz0dnzF28)
 
