@@ -11,7 +11,7 @@
 
 ### DEMO en Itch.io:
 
-[Demo click aquí](https://angelargd8.itch.io/expirationdate?secret=dYigCBnygTMSvVDLNdYzm2B8)
+[Demo click aquí](https://angelargd8.itch.io/expirationdate)
 
 ### Niveles jugables:
 - Restaurant
