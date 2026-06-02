@@ -18,9 +18,7 @@
 ---
 ### Breve descripcion del proyecto:
 
-ExpirationDate es un videojuego desarrollado en Unity donde el jugador controla una hamburguesa que está por vencer. Si no logra cambiar sus ingredientes y mantenerse fresca, será tirada al día siguiente.
-
-El juego se desarrolla dentro de un restaurante después del cierre del local. El jugador debe explorar el escenario, recolectar ingredientes frescos, evitar perder frescura y enfrentarse a otras hamburguesas que también buscan sobrevivir.
+Expiration Date es un juego de acción y supervivencia donde el jugador es una hamburguesa que sus ingredientes tienen fecha de caducidad al día siguiente. Por lo tanto, debe conseguir ingredientes frescos para evitar ser tirada al día siguiente cuando abran el restaurante. Los ingredientes los encuentra en todo el restaurante, pero para conseguirlos deberá luchar contra otras hamburguesas vencidas y hamburguesas frescas que huyen del jugador porque no quieren contaminarse. 
 
 La experiencia combina mecánicas de movimiento en tercera persona, salto, sprint, recolección de ingredientes, lanzamiento de proyectiles, sistema de vida, frescura, enemigos con inteligencia artificial, combate y condiciones de victoria y derrota.
 
