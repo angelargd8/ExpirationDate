@@ -1,8 +1,12 @@
 # ExpirationDate
 
-### Vertical Slide:
+# Vertical Slide:
 
 [Video click aquí](https://youtu.be/dADt2uD0uK4)
+
+# Game Pitch
+
+[Video click aquí](https://youtu.be/gBgEwOgvfQM)
 
 ## Laboratorio 8: Input Actions (progra)
 
