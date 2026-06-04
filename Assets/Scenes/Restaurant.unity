@@ -48421,6 +48421,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1040005430}
     - target: {fileID: 8998861600645619711, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
+      propertyPath: audioSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: cebc23199c286f44a9cfe17535e757b5, type: 3}
+    - target: {fileID: 8998861600645619711, guid: 8ba12f5da1a094d489c4dbf64c569fb8, type: 3}
       propertyPath: burgerStats
       value: 
       objectReference: {fileID: 2024207188}

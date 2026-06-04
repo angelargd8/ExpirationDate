@@ -10,6 +10,9 @@ public class PlayerPickupController : MonoBehaviour
     [Header("Referencias")]
     [SerializeField] private BurgerStats burgerStats;
 
+    [Header("Audio PickUP")]
+    [SerializeField] private AudioClip audioSFX;
+
     private PlayerInput playerInput;
     private InputAction interactAction;
 
@@ -85,6 +88,7 @@ public class PlayerPickupController : MonoBehaviour
         if (closestIngredient != null)
         {
             Debug.Log("Recogiendo ingrediente: " + closestIngredient.name);
+            AudioManager.Instance.PlaySFX(audioSFX);
             closestIngredient.PickUp(burgerStats);
         }
         else
