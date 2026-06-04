@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 6150049901595284446}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.18, y: 0.56, z: -0.04}
+  m_LocalPosition: {x: -0.18, y: -0.02, z: -0.04}
   m_LocalScale: {x: 8.155469, y: 8.155477, z: 8.155469}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -399,6 +399,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   throwForceMultiplier: 1
+  enemyTargetHeightOffset: 0.1
 --- !u!114 &890736209206508226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,6 +432,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  burgerAnimator: {fileID: 0}
 --- !u!114 &4191319564203616996
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 6150049901595284446}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.18, y: 0.56, z: -0.04}
+  m_LocalPosition: {x: -0.18, y: 0.918, z: -0.379}
   m_LocalScale: {x: 8.155469, y: 8.155477, z: 8.155469}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -396,6 +396,7 @@ MonoBehaviour:
   mouseSensitivity: 100
   minPitch: -30
   maxPitch: 65
+  burgerAnimator: {fileID: 0}
 --- !u!114 &9198072592998759570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,6 +464,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   burgerStats: {fileID: 0}
+  audioSFX: {fileID: 0}
 --- !u!114 &5994496192759286065
 MonoBehaviour:
   m_ObjectHideFlags: 0
