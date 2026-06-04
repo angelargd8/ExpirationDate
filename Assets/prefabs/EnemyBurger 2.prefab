@@ -959,6 +959,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   throwForceMultiplier: 2
+  enemyTargetHeightOffset: 0.1
 --- !u!114 &7501488432846134440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -979,6 +980,7 @@ MonoBehaviour:
   reduceFreshnessOverTime: 0
   freshnessLossInterval: 1
   freshnessLossAmount: 1
+  audioDieSFX: {fileID: 8300000, guid: 4fdcc52754188644097383d960b9b30e, type: 3}
 --- !u!114 &7323705380055468886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1012,6 +1014,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  burgerAnimator: {fileID: 0}
 --- !u!4 &7860765918055671302 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}

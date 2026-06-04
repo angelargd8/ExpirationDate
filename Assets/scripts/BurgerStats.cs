@@ -19,6 +19,9 @@ public class BurgerStats : MonoBehaviour
     [SerializeField] private int freshnessLossAmount = 1;
 
 
+    [Header("Die SFX")]
+    [SerializeField] private AudioClip audioDieSFX;
+
 
     private float freshnessTimer;
     private bool isDead = false;
@@ -76,6 +79,7 @@ public class BurgerStats : MonoBehaviour
 
         if (currentFreshness <= 0 && isPlayer)
         {
+            
             Die();
         }
     }
@@ -109,6 +113,7 @@ public class BurgerStats : MonoBehaviour
 
         isDead = true;
 
+        AudioManager.Instance.PlaySFX(audioDieSFX);
         Debug.Log(gameObject.name + " fue derrotado");
 
         if (isPlayer)

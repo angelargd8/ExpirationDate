@@ -447,6 +447,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   throwForceMultiplier: 1
+  enemyTargetHeightOffset: 0.1
 --- !u!114 &8998861600645619711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,6 +486,7 @@ MonoBehaviour:
   reduceFreshnessOverTime: 1
   freshnessLossInterval: 10
   freshnessLossAmount: 1
+  audioDieSFX: {fileID: 8300000, guid: 4fdcc52754188644097383d960b9b30e, type: 3}
 --- !u!4 &7860765918055671302 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 617327475865014503, guid: c7deace80d5eded49abaad35feda8f1e, type: 3}
