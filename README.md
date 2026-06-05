@@ -28,9 +28,11 @@
 ---
 ### Breve descripcion del proyecto:
 
-Expiration Date es un juego de acción y supervivencia donde el jugador es una hamburguesa que sus ingredientes tienen fecha de caducidad al día siguiente. Por lo tanto, debe conseguir ingredientes frescos para evitar ser tirada al día siguiente cuando abran el restaurante. Los ingredientes los encuentra en todo el restaurante, pero para conseguirlos deberá luchar contra otras hamburguesas vencidas y hamburguesas frescas que huyen del jugador porque no quieren contaminarse. 
+Expiration Date es un juego de acción y supervivencia donde el jugador controla una hamburguesa cuyos ingredientes están próximos a vencer. La historia comienza dentro de un restaurante cerrado, donde la hamburguesa debe conseguir ingredientes frescos para evitar ser tirada a la basura al día siguiente cuando el restaurante vuelva a abrir.
 
-La experiencia combina mecánicas de movimiento en tercera persona, salto, sprint, recolección de ingredientes, lanzamiento de proyectiles, sistema de vida, frescura, enemigos con inteligencia artificial, combate y condiciones de victoria y derrota.
+Durante la partida, el jugador debe recorrer el restaurante, recolectar ingredientes, lanzar proyectiles y enfrentarse a otras hamburguesas. Algunas hamburguesas enemigas están descompuestas y atacan al jugador, mientras que otras hamburguesas frescas intentan mantener distancia y atacar desde lejos.
+
+La experiencia combina mecánicas de movimiento en tercera persona, salto, sprint, recolección de ingredientes, lanzamiento de proyectiles, sistema de vida, frescura, enemigos con inteligencia artificial, combate, pausa, efectos visuales de daño y condiciones de victoria y derrota.
 
 
 ## Objetivo del juego
@@ -44,7 +46,8 @@ Para lograrlo, el jugador debe:
 - Lanzar ingredientes como proyectiles.
 - Enfrentarse a hamburguesas enemigas.
 - Evitar perder toda su vida o frescura.
-- Llegar a la zona final para activar la victoria.
+- Derrotar a los enemigos necesarios para completar el nivel.
+- Llegar al final de la partida cumpliendo las condiciones de victoria.
 
 ----
 
@@ -179,20 +182,74 @@ Para esto se creó un punto de lanzamiento llamado:
 
 - ThrowPoint
 
-Este objeto se coloca como hijo del jugador y define desde dónde sale el ingrediente lanzado.
+Este objeto se coloca como hijo del jugador o del enemigo y define desde dónde sale el ingrediente lanzado.
 
-El flujo del sistema es:
+El sistema utiliza el script:
 
-1. El jugador presiona la acción Throw.
-2. El script IngredientThrower recibe el input.
-3. Se instancia el prefab del ingrediente en la posición del ThrowPoint.
-4. Se obtiene el Rigidbody del proyectil.
-5. Se aplica una fuerza hacia adelante usando la dirección del ThrowPoint.
-6. El proyectil se destruye después de un tiempo determinado o al colisionar.
+- IngredientThrower
 
-Esto permite que el ingrediente lanzado se comporte como un proyectil físico dentro de la escena.
+El flujo general del lanzamiento es:
+
+1. El jugador presiona la acción Throw o el enemigo ejecuta su ataque.
+2. El script IngredientThrower valida que exista un ingrediente actual.
+3. Se calcula la dirección del lanzamiento.
+4. Se obtiene un proyectil desde el sistema de object pooling.
+5. Se posiciona el proyectil en el ThrowPoint.
+6. Se le asigna un owner para evitar que dañe al personaje que lo lanzó.
+7. Se limpia su velocidad previa.
+8. Se aplica fuerza al Rigidbody del proyectil.
+9. El proyectil se devuelve al pool al terminar su tiempo de vida o al impactar contra un objetivo válido.
+
+Para el jugador, la dirección del lanzamiento se calcula tomando como referencia la cámara, de modo que el ingrediente se lanza hacia donde apunta el jugador.
+
+Para los enemigos, la dirección se calcula hacia la posición del jugador, permitiendo que las hamburguesas enemigas disparen hacia su objetivo.
 
 ---
+
+## Object Pooling de proyectiles
+
+Se implementó object pooling para los proyectiles de ingredientes con el objetivo de mejorar el rendimiento del juego.
+
+Antes, cada lanzamiento creaba un nuevo proyectil con `Instantiate` y luego lo eliminaba con `Destroy`. Aunque esto funcionaba, podía generar carga innecesaria si el jugador y varios enemigos lanzaban muchos ingredientes durante la partida.
+
+Ahora el sistema reutiliza proyectiles ya creados. Cuando se necesita lanzar un ingrediente, el proyectil se toma del pool, se activa, se reposiciona y se lanza. Cuando deja de ser necesario, se desactiva y vuelve al pool para ser reutilizado más adelante.
+
+Scripts principales del sistema:
+
+- IngredientProjectilePool
+- PooledProjectile
+- IngredientThrower
+- IngredientDamage
+
+El funcionamiento del object pooling es:
+
+1. IngredientProjectilePool mantiene una cola de proyectiles disponibles por cada prefab de ingrediente.
+2. Si el pool no existe para un prefab, se crea automáticamente.
+3. Si hay proyectiles disponibles, se reutiliza uno.
+4. Si no hay proyectiles disponibles, se crea uno nuevo y se registra dentro del pool.
+5. PooledProjectile controla el retorno automático del proyectil después de su tiempo de vida.
+6. IngredientDamage devuelve el proyectil al pool cuando golpea a un jugador o enemigo válido.
+
+Con esto se evita crear y destruir proyectiles constantemente durante el juego.
+
+El proyectil actualmente solo desaparece inmediatamente si impacta contra un personaje con BurgerStats, como el jugador o un enemigo. Si choca contra el escenario, continúa activo hasta que termine su tiempo de vida.
+
+---
+
+## Sistema de daño de proyectiles
+
+Los ingredientes lanzados pueden causar daño mediante el script:
+
+- IngredientDamage
+
+Cada proyectil tiene un owner, que corresponde al personaje que lo lanzó. Esto permite evitar que el proyectil dañe inmediatamente al jugador o enemigo que lo generó.
+
+El sistema verifica si el objeto impactado tiene un componente BurgerStats. Si el objetivo tiene BurgerStats, recibe daño y el proyectil se devuelve al pool.
+
+Esto permite que los proyectiles funcionen tanto para el jugador como para los enemigos.
+
+---
+
 
 ## Sistema de pickups
 
@@ -241,7 +298,7 @@ Los ingredientes pueden modificar estos valores. Por ejemplo:
 
 ---
 
-## Barras de estado
+## Barras de estado y billboarding
 
 Se implementaron barras visuales para mostrar la vida y la frescura de la hamburguesa.
 
@@ -251,17 +308,18 @@ Estas barras se muestran sobre el personaje y leen los valores del script:
 
 Cada barra muestra el porcentaje actual correspondiente:
 
-valor actual / valor máximo
+- valor actual / valor máximo
 
 Por ejemplo, si la hamburguesa tiene:
 
-Vida máxima: 100
-Vida actual: 10
+- Vida máxima: 100
+- Vida actual: 10
 
-la barra de vida muestra únicamente el 10%.
+La barra de vida muestra únicamente el 10%.
 
-El sistema está pensado para poder convertirse en prefab y reutilizarse en otras hamburguesas, como enemigos o NPCs.
+Además, las barras utilizan billboarding para mantenerse orientadas hacia la cámara. Esto permite que el jugador pueda ver correctamente la vida y frescura de las hamburguesas sin importar desde qué dirección observe al personaje.
 
+El sistema está pensado para convertirse en prefab y reutilizarse en otras hamburguesas, como enemigos o NPCs.
 ---
 
 ## Scriptable Objects
